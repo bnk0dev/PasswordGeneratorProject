@@ -42,7 +42,7 @@ Process selection: '''))
             print("You have entered an incorrect selection code, please correct it.")
             continue
 
-        # Basit düzeyde random şifre oluşturma 
+        # Simple random password generation 
         nr_letters= int(input("How many characters will be in the password to be created: ")) 
         if(nr_letters > 0):
             for char in range(0, nr_letters): 
@@ -70,7 +70,7 @@ Process selection: '''))
         # Sort randomly selected characters randomly within the list without returning a new list
         shuffle(password_list) 
 
-        # Listedeki karakterleri oluşturulan password değişkenine ata
+        # Assign the characters in the list to the created password variable
         for char in password_list: 
             password += char 
 
